@@ -1,0 +1,32 @@
+/* *Servicios */
+.card {
+    margin: 0 3vh 0 3vh;
+    z-index: -1;
+
+    &-group {
+        margin: 5vh;
+    }
+
+    img:hover {
+        border: 2px solid #FBCA04;
+    }
+}
+
+.list-style-type-disc {
+    list-style-type: disc;
+}
+
+.list-style-type-circle {
+    list-style-type: circle;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* SERVICIO */
+    .card {
+        margin: 1vh 1vh;
+        &-group {
+            margin: 1vh 0;
+        }
+    }
+}

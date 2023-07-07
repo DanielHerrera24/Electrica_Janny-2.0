@@ -1,0 +1,87 @@
+/* NAVBAR */
+.logo-inicio {
+    max-width: 12vh;
+}
+
+.navbar {
+    background-color: #034494;
+    padding: 1px;
+    min-height: 10vh;
+
+    &-toggler {
+        background: #EA1D24;
+        border: none;
+        padding: 10px 6px;
+        outline: none;
+
+        span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border: 1px;
+            background: $color-white;
+        }
+
+        span+span {
+            margin-top: 4px;
+            width: 18px;
+            margin-left: 4px;
+        }
+
+        span+span+span {
+            width: 10px;
+            margin-left: 12px;
+        }
+    }
+
+    &-expand-md {
+        padding-right: 2vh;
+
+        .navbar-collapse {
+            flex-direction: row-reverse;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                padding: 1rem 1.2rem;
+                font-size: 1.4rem;
+                position: relative;
+                color: $color-white;
+
+                &:hover {
+                    border-top: 4px solid #FBCA04;
+                    color: #EA1D24;
+                }
+            }
+
+            button {
+                padding: 1.2rem 5rem;
+            }
+        }
+    }
+}
+
+.nav-active {
+    border-top: 4px solid #FBCA04;
+    color: $color-white;
+}
+
+@media screen and (max-width: 991px) {
+
+    /* CSS Global */
+    .navbar {
+        min-height: 10vh;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: .8rem 1.2rem;
+    }
+
+    .nav-active {
+        border-bottom: 4px solid #FBCA04;
+    }
+
+    .logo-inicio {
+        max-width: 10vh;
+    }
+}

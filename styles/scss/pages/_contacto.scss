@@ -1,0 +1,91 @@
+/* Contacto */
+#seccion-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contacto-img {
+    display: flex;
+    width: 40%;
+    height: 100vh;
+    margin: 10vh 0;
+    box-shadow: $box-shadow-imgs;
+
+    img {
+        @include img-cover-wh-100;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 40%;
+    border-radius: 10%;
+    box-shadow: $box-shadow-imgs;
+
+    &-casillas {
+        display: flex;
+        padding: 2vh;
+        width: 100%;
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-legend {
+        padding: 1vh 0;
+        text-align: center;
+    }
+
+    &-textarea div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1vh;
+    }
+}
+
+#textarea-comentario {
+    resize: none;
+}
+
+.form-div-span {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vh 0;
+}
+
+/* TABLET */
+@media screen and (max-width: 991px) {
+
+    /* CONTACTO */
+    #seccion-contacto {
+        flex-direction: column;
+    }
+
+    .contacto-img {
+        height: 100%;
+        width: 90%;
+        margin: 5vh 0;
+    }
+
+    .form {
+        margin-bottom: 5vh;
+        width: 90%;
+        height: 100%;
+
+        &-casillas {
+            padding: 1vh;
+        }
+
+        &-legend {
+            padding: 1vh 0;
+        }
+    }
+}

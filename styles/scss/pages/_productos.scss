@@ -1,0 +1,25 @@
+/* Productos */
+#seccion-productos {
+    padding: 4vh 0;
+
+    .productos-card {
+        &-frase {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+            background: rgb(255, 235, 136);
+            background: linear-gradient(320deg, rgba(255, 235, 136, 1) 0%, rgba(255, 255, 255, 1) 40%);
+        }
+    }
+}
+
+/* MOVIL */
+@media screen and (max-width: 576px) {
+
+    /* PRODUCTOS */
+    .productos-card {
+        background: rgb(255, 235, 136);
+        background: linear-gradient(180deg, rgba(255, 235, 136, 1) 0%, rgba(255, 255, 255, 1) 40%);
+    }
+}

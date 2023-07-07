@@ -1,0 +1,12 @@
+@mixin img-cover-wh-100 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin all-center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
