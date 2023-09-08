@@ -12,7 +12,6 @@
 
 .texto-imagen-inicio {
     text-align: center;
-    font-size: 1.7rem;
     background: linear-gradient(to right, #034494ae, #EA1D24ae);
     border: 2px solid #FBCA04;
     color: $color-white;
@@ -70,7 +69,6 @@
     .div-parrafos {
 
         p {
-            font-size: 1.2rem;
             margin-bottom: 3vh;
         }
     }
@@ -100,28 +98,7 @@
     }
 }
 
-
-
-
-/* Falta actualizar */
-
-
-
-
-/* TABLET */
-@media screen and (max-width: 992px) {
-
-    /* index */
-    .index-parrafos-top {
-        margin: 0 3vh 2vh 3vh;
-    }
-
-    .index-parrafos {
-        margin: 0 3vh 2vh 3vh;
-    }
-}
-
-/* 696px */
+/* Tablet */
 @media screen and (max-width: 760px) {
     
     .artIndex {
@@ -134,8 +111,9 @@
             grid-template-columns: 1fr;
 
         .div-imgs {
-            width: auto;
-            height: 80vh;
+            margin: auto;
+            max-width: 80%;
+            height: 70vh;
             img {
                 object-fit: cover;
                 width: 100%;
@@ -144,54 +122,30 @@
         }
     }
 
-
-    /* Articulo 1 */
-    .index-articulo-1 {
-        flex-flow: column wrap;
-
-        .div-parrafos {
-            width: 100%;
-        }
-
-        .index-div-img-1 {
-            width: 100%;
-            margin: 0;
-            padding: 2vh;
-        }
-    }
-
-    /* Articulo 2 */
-    .index-articulo-2 {
-        flex-flow: column-reverse wrap;
-        padding-top: 2vh;
-
-        .div-parrafos {
-            width: 100%;
-        }
-
-        .index-div-img-2 {
-            width: 100%;
-            margin: 0;
-            padding: 2vh;
-        }
-    }
 }
+
+/* Falta actualizar */
 
 /* MÓVIL */
 @media screen and (max-width: 576px) {
 
+    .artIndex {
+        padding: 0;
+        div {
+            margin-top: 5vh;
+            padding: 0;
+        }
+    }
     /* index */
     .index-seccion-2 {
         padding: 2vh 0;
     }
 
     .index-parrafos-top {
-        font-size: 1rem;
         margin: 0 2vh 2vh 2vh;
     }
 
     .index-parrafos {
-        font-size: 1rem;
         margin: 0 2vh 2vh 2vh;
     }
 }

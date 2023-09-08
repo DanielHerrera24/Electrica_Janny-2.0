@@ -48,7 +48,7 @@
         .navbar-nav {
             .nav-link {
                 padding: 1rem 1.2rem;
-                font-size: 1.25rem;
+                font-size: 1.5rem;
                 position: relative;
                 color: $color-white;
 
@@ -66,18 +66,22 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 
     /* CSS Global */
-    .navbar {
-        min-height: 10vh;
-    }
 
     .navbar-expand-md .navbar-nav .nav-link {
         padding: .8rem 1.2rem;
+        font-size: 1.3rem;
     }
+}
 
-    .logo-inicio {
-        max-width: 10vh;
+@media screen and (max-width: 760px) {
+
+    /* CSS Global */
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: .8rem 1.2rem;
+        font-size: 1.1rem;
     }
 }
