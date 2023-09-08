@@ -148,7 +148,7 @@ article {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 10vh auto auto;
 }
 
 /* grid items */
@@ -223,9 +223,8 @@ article {
 /* Pages */
 /* Index */
 .seccion-principal {
-  margin-top: 10vh;
   background-image: url(../../imgs/puerta-local.png);
-  height: 100vh;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -513,6 +512,10 @@ article {
   display: flex;
   justify-content: space-evenly;
   margin: 2vh 0;
+}
+
+.cont-maps {
+  max-width: 100%;
 }
 
 /* TABLET */
