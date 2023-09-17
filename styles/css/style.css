@@ -276,8 +276,10 @@ article {
 
 .texto-imagen-inicio {
   text-align: center;
-  background: linear-gradient(to right, rgba(3, 68, 148, 0.6823529412), rgba(234, 29, 36, 0.6823529412));
-  border: 2px solid #FBCA04;
+  background: linear-gradient(to right, rgba(3, 68, 148, 0.4941176471), rgba(234, 29, 36, 0.4941176471));
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid #FBCA04;
   color: #fff;
   border-radius: 20px;
   line-height: 50px;
@@ -368,7 +370,7 @@ article {
 /* MÓVIL */
 @media screen and (max-width: 576px) {
   .artIndex {
-    padding: 0;
+    padding-bottom: 2vh;
   }
   .artIndex div {
     margin-top: 5vh;

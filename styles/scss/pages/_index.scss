@@ -12,8 +12,10 @@
 
 .texto-imagen-inicio {
     text-align: center;
-    background: linear-gradient(to right, #034494ae, #EA1D24ae);
-    border: 2px solid #FBCA04;
+    background: linear-gradient(to right, #0344947e, #ea1d247e);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid #FBCA04;
     color: $color-white;
     border-radius: 20px;
     line-height: 50px;
@@ -100,7 +102,7 @@
 
 /* Tablet */
 @media screen and (max-width: 760px) {
-    
+
     .artIndex {
         padding: 2vh;
         grid-template-areas:
@@ -108,12 +110,13 @@
             "img1"
             "info2"
             "img2";
-            grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
 
         .div-imgs {
             margin: auto;
             max-width: 80%;
             height: 70vh;
+
             img {
                 object-fit: cover;
                 width: 100%;
@@ -130,12 +133,14 @@
 @media screen and (max-width: 576px) {
 
     .artIndex {
-        padding: 0;
+        padding-bottom: 2vh;
+
         div {
             margin-top: 5vh;
             padding: 0;
         }
     }
+
     /* index */
     .index-seccion-2 {
         padding: 2vh 0;
