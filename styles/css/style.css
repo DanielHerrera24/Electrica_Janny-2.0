@@ -263,6 +263,11 @@ article {
 }
 /* Pages */
 /* Index */
+/*
+Cosas por arreglar: animacion conjunta de flecha de mostrar mas.
+header / nav sticky para mandar bien a la seccion seleccionada
+cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con scroll css puro (video midudev)
+*/
 .seccion-principal {
   background-image: url(../../imgs/puerta-local.png);
   height: 90vh;
@@ -270,20 +275,39 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+}
+.seccion-principal img {
+  margin-top: 10px;
+  width: 120px;
+  color: #fff;
+  filter: drop-shadow(10px 10px 20px black);
+  font-family: "Josefin Sans", sans-serif;
+  animation: bounce 1s infinite alternate;
+}
+.seccion-principal img:hover {
+  animation-play-state: paused;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .texto-imagen-inicio {
   text-align: center;
-  background: linear-gradient(to right, rgba(3, 68, 148, 0.4941176471), rgba(234, 29, 36, 0.4941176471));
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  border: 1px solid #FBCA04;
+  background: rgba(3, 68, 148, 0.4941176471);
+  backdrop-filter: blur(8px);
   color: #fff;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
   line-height: 50px;
-  padding: 3vh;
+  padding: 3vh 1vh 0 1vh;
+  font-family: "Josefin Sans", sans-serif;
+}
+.texto-imagen-inicio h2 {
+  font-size: 6vh;
+}
+.texto-imagen-inicio h3 {
+  font-size: 4vh;
 }
 
 /* Seccion inicio */
@@ -387,34 +411,36 @@ article {
     margin: 0 2vh 2vh 2vh;
   }
 }
-/* Productos */
-#seccion-productos {
-  padding: 4vh 0;
-}
-#seccion-productos .productos-card-frase {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-  background: rgb(255, 235, 136);
-  background: linear-gradient(320deg, rgb(255, 235, 136) 0%, rgb(255, 255, 255) 40%);
-}
-
-/* MOVIL */
-@media screen and (max-width: 576px) {
-  /* PRODUCTOS */
-  .productos-card {
-    background: rgb(255, 235, 136);
-    background: linear-gradient(180deg, rgb(255, 235, 136) 0%, rgb(255, 255, 255) 40%);
+/* Animation */
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
   }
 }
 /* *Servicios */
+#seccion-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#seccion-servicios h2 {
+  border-bottom: 10px solid #FBCA04;
+  height: 100px;
+  padding: 20px 0;
+  margin-top: 2vh;
+  font-size: 6vh;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .card {
-  margin: 0 3vh 0 3vh;
+  margin: 1vh 3vh;
   z-index: -1;
 }
 .card-group {
-  margin: 5vh;
+  margin: 1vh;
 }
 .card img:hover {
   border: 2px solid #FBCA04;
