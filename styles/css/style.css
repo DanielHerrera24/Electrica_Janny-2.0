@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Abstracts */
 /* Variables Globales */
 /* Base */
@@ -320,7 +323,8 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
   line-height: 50px;
   padding: 3vh 1vh 0 1vh;
   font-family: "Josefin Sans", sans-serif;
-  animation: zoom-in 1s, translate-text 1s;
+  animation: translate-text 1s;
+  z-index: 3;
 }
 .texto-imagen-inicio h2 {
   font-size: 6vh;
@@ -435,42 +439,42 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 90vh;
 }
-#seccion-servicios h2 {
-  border-bottom: 10px solid #FBCA04;
-  height: 100px;
-  padding: 20px 0;
-  margin-top: 2vh;
+#seccion-servicios #title-servicios {
+  margin-top: 5vh;
   font-size: 6vh;
   font-family: "Josefin Sans", sans-serif;
 }
-
-.card {
-  margin: 1vh 3vh;
-  z-index: -1;
+#seccion-servicios #borde-amarillo {
+  width: 120px;
+  height: 10px;
+  background-color: #FBCA04;
 }
+
 .card-group {
-  margin: 1vh;
+  margin-top: 6vh;
+  gap: 2vh;
+  height: 70%;
 }
-.card img:hover {
-  border: 2px solid #FBCA04;
+.card-group .card .card-img {
+  height: 32vh;
+  object-fit: cover;
 }
-
-.list-style-type-disc {
-  list-style-type: disc;
-}
-
-.list-style-type-circle {
-  list-style-type: circle;
+.card-group .card .card-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #034494;
+  font-weight: bold;
+  padding: 2vh 0;
 }
 
 @media screen and (max-width: 768px) {
   /* SERVICIO */
   .card {
-    margin: 1vh 1vh;
+    margin: 1vh 3vh;
   }
   .card-group {
-    margin: 1vh 0;
+    margin: 3vh 0;
   }
 }
 /* *Sobre Nosotros */

@@ -10,3 +10,9 @@
     text-align: center;
     justify-content: center;
 }
+
+@mixin borde-amarillo {
+    width: 120px;
+    height: 10px;
+    background-color: #FBCA04;
+}

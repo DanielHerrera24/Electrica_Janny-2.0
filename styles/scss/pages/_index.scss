@@ -39,7 +39,8 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
   line-height: 50px;
   padding: 3vh 1vh 0 1vh;
   font-family: "Josefin Sans", sans-serif;
-  animation: zoom-in 1s, translate-text 1s;
+  animation: translate-text 1s;
+  z-index: 3;
   h2 {
     font-size: 6vh;
   }
