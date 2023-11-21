@@ -10,7 +10,6 @@ body {
   font-size: 15px;
   line-height: 1.5;
   box-sizing: border-box;
-  overflow-x: hidden;
   top: 0;
 }
 
@@ -114,10 +113,52 @@ article {
     font-size: 1.4rem;
   }
 }
+/* Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes translate-text {
+  from {
+    transform: translateY(-20vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes translate-arrow {
+  from {
+    transform: translateY(-40vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 /* Layout */
 /* NAVBAR */
 .logo-inicio {
   max-width: 10vh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .navbar {
@@ -183,28 +224,6 @@ article {
     font-size: 1.1rem;
   }
 }
-/* Grid */
-.grid-all {
-  min-height: 100vh;
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 10vh auto auto;
-}
-
-/* grid items */
-.grid-header {
-  grid-area: header;
-}
-
-.grid-main {
-  grid-area: main;
-}
-
-.grid-footer {
-  grid-area: footer;
-}
-
 /* Footer */
 .footer {
   background-color: #034494;
@@ -265,7 +284,6 @@ article {
 /* Index */
 /*
 Cosas por arreglar: animacion conjunta de flecha de mostrar mas.
-header / nav sticky para mandar bien a la seccion seleccionada
 cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con scroll css puro (video midudev)
 */
 .seccion-principal {
@@ -285,11 +303,11 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
   color: #fff;
   filter: drop-shadow(10px 10px 20px black);
   font-family: "Josefin Sans", sans-serif;
-  animation: bounce 1s infinite alternate;
+  animation: bounce 1s infinite alternate, zoom-in 1s, translate-arrow 1s;
 }
 .seccion-principal img:hover {
   animation-play-state: paused;
-  opacity: 0.7;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -302,6 +320,7 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
   line-height: 50px;
   padding: 3vh 1vh 0 1vh;
   font-family: "Josefin Sans", sans-serif;
+  animation: zoom-in 1s, translate-text 1s;
 }
 .texto-imagen-inicio h2 {
   font-size: 6vh;
@@ -409,15 +428,6 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
   }
   .index-parrafos {
     margin: 0 2vh 2vh 2vh;
-  }
-}
-/* Animation */
-@keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(10px);
   }
 }
 /* *Servicios */

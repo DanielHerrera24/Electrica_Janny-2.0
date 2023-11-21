@@ -2,7 +2,6 @@
 
 /*
 Cosas por arreglar: animacion conjunta de flecha de mostrar mas.
-header / nav sticky para mandar bien a la seccion seleccionada
 cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con scroll css puro (video midudev)
 */
 
@@ -22,10 +21,10 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
     color: #fff;
     filter: drop-shadow(10px 10px 20px black);
     font-family: "Josefin Sans", sans-serif;
-    animation: bounce 1s infinite alternate;
+    animation: bounce 1s infinite alternate, zoom-in 1s, translate-arrow 1s;
     &:hover {
       animation-play-state: paused;
-      opacity: 0.7;
+      opacity: 0.8;
       cursor: pointer;
     }
   }
@@ -40,6 +39,7 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
   line-height: 50px;
   padding: 3vh 1vh 0 1vh;
   font-family: "Josefin Sans", sans-serif;
+  animation: zoom-in 1s, translate-text 1s;
   h2 {
     font-size: 6vh;
   }
@@ -174,17 +174,5 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
 
   .index-parrafos {
     margin: 0 2vh 2vh 2vh;
-  }
-}
-
-/* Animation */
-
-@keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-
-  to {
-    transform: translateY(10px);
   }
 }

@@ -1,0 +1,45 @@
+/* Animation */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes translate-text {
+    from {
+        transform: translateY(-20vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes translate-arrow {
+    from {
+        transform: translateY(-40vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
