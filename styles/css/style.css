@@ -286,8 +286,7 @@ header {
 /* Pages */
 /* Index */
 /*
-Cosas por arreglar: animacion conjunta de flecha de mostrar mas.
-cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con scroll css puro (video midudev)
+mejorar animaciones con scroll cards css puro (video midudev)
 */
 .seccion-principal {
   background-image: url(../../imgs/puerta-local.png);
@@ -423,7 +422,7 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
     padding-bottom: 2vh;
   }
   .artIndex div {
-    margin-top: 5vh;
+    margin-top: 10vh;
     padding: 0;
   }
   /* index */
@@ -442,10 +441,10 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 90vh;
+  padding: 10vh 0;
+  min-height: 100vh;
 }
 #seccion-servicios #title-servicios {
-  margin-top: 5vh;
   font-size: 6vh;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -458,7 +457,7 @@ cambiar info y quiza imagenes de servicios, ademas de mejorar animaciones con sc
 
 .card-group {
   margin-top: 6vh;
-  gap: 2vh;
+  gap: 0 2vh;
 }
 .card-group .card .card-img {
   height: 30vh;
