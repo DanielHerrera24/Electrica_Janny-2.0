@@ -1,51 +1,21 @@
 function index() {
-    const artIndex = document.getElementById("cont-index-principal")
+  const artIndex = document.getElementById("nosotros");
 
-    artIndex.innerHTML = `
+  artIndex.innerHTML = `
                 <article class="artIndex">
                     <div id="index-info-1" class="div-parrafos">
-                        <p data-aos="fade-down-right" class="index-parrafos-top parrafos"><b>Eléctrica
-                                Janny</b> es una empresa dedicada al suministro de
-                            <b>material eléctrico</b> de las principales marcas en San Luis Río Colorado, Sonora.
+                        <h2 class="index-parrafos" data-aos="fade-right">NOSOTROS</h2>
+                        <span data-aos="fade-right" class="borde-amarillo"></span>
+                        <p data-aos="fade-right" class="index-parrafos-top parrafos"><b>Eléctrica
+                            Janny</b> se destaca en el sector de venta de <b>material eléctrico</b> y en la realización de <b>obras eléctricas</b> de alta calidad en San Luis Río Colorado, Sonora.
                         </p>
-                        <p data-aos="fade-right" class="index-parrafos parrafos">Somos profesionales que se
-                            adaptan a las exigencias de tus requerimientos
-                            para satisfacer
-                            completamente tus necesidades, por lo que te atendemos y asesoramos en un horario muy accesible
-                            logrando así que nos visites y aclaremos todas las dudas que tengas.</p>
-                        <p data-aos="fade-up-right" class="index-parrafos parrafos">A diferencia de la
-                            competencia, al venir a <b>Eléctrica Janny</b>
-                            encontrarás los mejores productos,
-                            siempre en perfectas condiciones para garantizar la durabilidad de cada material eléctrico que
-                            lleves, así como trabajo pensado y diseñado con los más altos estándares de calidad y atención
-                            personalizada.</p>
+                        <p data-aos="fade-right" class="index-parrafos parrafos">Destacamos por nuestro firme compromiso con la excelencia en productos y servicios. Nuestro equipo altamente capacitado y nuestra experiencia consolidada nos permiten ofrecer soluciones eléctricas eficientes y personalizadas, desde proyectos residenciales hasta obras industriales. Somos profesionales que se adaptan a las exigencias de tus requerimientos para satisfacer completamente tus necesidades.</p>
+                        <p data-aos="fade-right" class="index-parrafos parrafos">Acércate a nuestra sucursal, visita nuestro <b>sitio oficial</b> y síguenos en <a href="https://www.facebook.com/electrijanny" target="_blank"><b>Facebook</b></a>, no te pierdas de todos los beneficios y material eléctrico que tenemos para ti.</p>
                     </div>
                     <div id="index-div-img-1" data-aos="zoom-in-left" class="div-imgs">
-                        <img src="./imgs/Tienda-primeraImpresion.jpg" alt="Instalacion de luz en techo" class="index-imgs">
+                        <img src="./imgs/Tienda-vistaDesdeCaja.jpg" alt="Instalacion de luz en techo" class="index-imgs">
                     </div>
-                    <div id="index-div-img-2" data-aos="zoom-in-right" class="div-imgs">
-                        <img src="./imgs/Tienda-laMagiaDelFuturo.jpg" alt="Instalacion de spots" class="index-imgs">
-                    </div>
-                    <div id="index-info-2" class="div-parrafos">
-                        <p data-aos="fade-down-left" class="index-parrafos-top parrafos">Al visitarnos,
-                            recibirás asesoría integral sobre cada uno de los
-                            servicios
-                            que
-                            tenemos.
-                            Nos mantenemos actualizados respecto a los productos más innovadores del mercado
-                            constantemente.</p>
-                        <p data-aos="fade-left" class="index-parrafos parrafos">Elaboramos proyectos que se
-                            adecuan a lo que nos solicites, por lo que
-                            para nosotros trabajar de
-                            la
-                            mano contigo es lo más importante. Juntos lograremos el mejor resultado.
-                        <p data-aos="fade-up-left" class="index-parrafos parrafos">Acércate a nuestra
-                            sucursal, visita nuestro <b>sitio oficial</b> y
-                            síguenos en <b>Facebook</b>, no te
-                            pierdas
-                            de todos los beneficios y <b>material eléctrico</b> que tenemos para ti.</p>
-                    </div>
-                </article>`
+                </article>`;
 }
 
-index()
+index();

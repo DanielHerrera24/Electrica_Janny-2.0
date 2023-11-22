@@ -4,26 +4,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    min-height: 90vh;
     #title-servicios {
         margin-top: 5vh;
         font-size: 6vh;
         font-family: 'Josefin Sans', sans-serif;
     }
+}
 
-    #borde-amarillo {
-        @include borde-amarillo
-    }
+.borde-amarillo {
+    @include borde-amarillo
 }
 
 .card-group {
     margin-top: 6vh;
     gap: 2vh;
-    height: 70%;
     .card {
 
         .card-img {
-            height: 32vh;
+            height: 30vh;
             object-fit: cover;
         }
         .card-title {
@@ -31,6 +30,9 @@
             color: #034494;
             font-weight: bold;
             padding: 2vh 0;
+        }
+        .card-text {
+            margin-bottom: 2vh;
         }
     }
 }
