@@ -125,17 +125,6 @@ article {
     transform: translateY(10px);
   }
 }
-@keyframes zoom-in {
-  0% {
-    transform: scale(0.5);
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes translate-text {
   from {
     transform: translateY(-20vh);
@@ -150,6 +139,26 @@ article {
   }
   to {
     transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0.5;
+    translate: 0 100px;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+@keyframes agrandar {
+  from {
+    scale: 0.4;
+  }
+  to {
+    scale: 1;
   }
 }
 /* Layout */
@@ -305,7 +314,7 @@ mejorar animaciones con scroll cards css puro (video midudev)
   color: #fff;
   filter: drop-shadow(10px 10px 20px black);
   font-family: "Josefin Sans", sans-serif;
-  animation: bounce 1s infinite alternate, zoom-in 1s, translate-arrow 1s;
+  animation: translate-arrow 1s, agrandar 1s cubic-bezier(0, 0.5, 1, 0.5), bounce 1s infinite 1.2s alternate;
 }
 .seccion-principal img:hover {
   animation-play-state: paused;
@@ -322,7 +331,7 @@ mejorar animaciones con scroll cards css puro (video midudev)
   line-height: 50px;
   padding: 3vh 1vh 0 1vh;
   font-family: "Josefin Sans", sans-serif;
-  animation: translate-text 1s;
+  animation: translate-text 1s, agrandar 1s cubic-bezier(0, 0.5, 1, 0.5);
   z-index: 3;
 }
 .texto-imagen-inicio h2 {
@@ -384,6 +393,9 @@ mejorar animaciones con scroll cards css puro (video midudev)
 .artIndex .div-imgs img {
   transition: transform 0.3s;
   box-shadow: 0 0 10px black;
+  animation: fade-in linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
 }
 
 /* Iframe */
@@ -447,6 +459,14 @@ mejorar animaciones con scroll cards css puro (video midudev)
 #seccion-servicios #title-servicios {
   font-size: 6vh;
   font-family: "Josefin Sans", sans-serif;
+  animation: fade-in linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+#seccion-servicios span {
+  animation: fade-in linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 50%;
 }
 
 .borde-amarillo {
@@ -459,9 +479,19 @@ mejorar animaciones con scroll cards css puro (video midudev)
   margin-top: 6vh;
   gap: 0 2vh;
 }
+.card-group .card {
+  animation: fade-in linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+  overflow: hidden;
+}
 .card-group .card .card-img {
   height: 30vh;
   object-fit: cover;
+}
+.card-group .card .card-img:hover {
+  transition-duration: 1s;
+  transform: scale(1.05);
 }
 .card-group .card .card-title {
   font-family: "Josefin Sans", sans-serif;

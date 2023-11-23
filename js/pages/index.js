@@ -12,7 +12,7 @@ function index() {
                         <p data-aos="fade-right" class="index-parrafos parrafos">Destacamos por nuestro firme compromiso con la excelencia en productos y servicios. Nuestro equipo altamente capacitado y nuestra experiencia consolidada nos permiten ofrecer soluciones eléctricas eficientes y personalizadas, desde proyectos residenciales hasta obras industriales. Somos profesionales que se adaptan a las exigencias de tus requerimientos para satisfacer completamente tus necesidades.</p>
                         <p data-aos="fade-right" class="index-parrafos parrafos">Acércate a nuestra sucursal, visita nuestro <b>sitio oficial</b> y síguenos en <a href="https://www.facebook.com/electrijanny" target="_blank"><b>Facebook</b></a>, no te pierdas de todos los beneficios y material eléctrico que tenemos para ti.</p>
                     </div>
-                    <div id="index-div-img-1" data-aos="zoom-in-left" class="div-imgs">
+                    <div id="index-div-img-1" class="div-imgs">
                         <img src="./imgs/Tienda-vistaDesdeCaja.jpg" alt="Instalacion de luz en techo" class="index-imgs">
                     </div>
                 </article>`;

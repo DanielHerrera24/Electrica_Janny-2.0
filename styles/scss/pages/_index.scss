@@ -20,7 +20,10 @@ mejorar animaciones con scroll cards css puro (video midudev)
     color: #fff;
     filter: drop-shadow(10px 10px 20px black);
     font-family: "Josefin Sans", sans-serif;
-    animation: bounce 1s infinite alternate, zoom-in 1s, translate-arrow 1s;
+    animation: 
+      translate-arrow 1s,
+      agrandar 1s cubic-bezier(0,.5,1,.5),
+      bounce 1s infinite 1.2s alternate;
     &:hover {
       animation-play-state: paused;
       opacity: 0.8;
@@ -38,7 +41,9 @@ mejorar animaciones con scroll cards css puro (video midudev)
   line-height: 50px;
   padding: 3vh 1vh 0 1vh;
   font-family: "Josefin Sans", sans-serif;
-  animation: translate-text 1s;
+  animation: 
+    translate-text 1s,
+    agrandar 1s cubic-bezier(0,.5,1,.5);
   z-index: 3;
   h2 {
     font-size: 6vh;
@@ -106,6 +111,9 @@ mejorar animaciones con scroll cards css puro (video midudev)
     img {
       transition: transform 0.3s;
       box-shadow: 0 0 10px black;
+      animation: fade-in linear both;
+      animation-timeline: view();
+      animation-range: entry 20% cover 30%;
     }
   }
 }

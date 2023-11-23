@@ -1,49 +1,63 @@
 /* *Servicios */
 
 #seccion-servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10vh 0;
-    min-height: 100vh;
-    #title-servicios {
-        font-size: 6vh;
-        font-family: 'Josefin Sans', sans-serif;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+  min-height: 100vh;
+  #title-servicios {
+    font-size: 6vh;
+    font-family: "Josefin Sans", sans-serif;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+  span {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+  }
 }
 
 .borde-amarillo {
-    @include borde-amarillo
+  @include borde-amarillo;
 }
 
 .card-group {
-    margin-top: 6vh;
-    gap: 0 2vh;
-    .card {
-
-        .card-img {
-            height: 30vh;
-            object-fit: cover;
-        }
-        .card-title {
-            font-family: 'Josefin Sans', sans-serif;
-            color: #034494;
-            font-weight: bold;
-            padding: 2vh 0;
-        }
-        .card-text {
-            margin-bottom: 2vh;
-        }
+  margin-top: 6vh;
+  gap: 0 2vh;
+  .card {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+    overflow: hidden;
+    .card-img {
+      height: 30vh;
+      object-fit: cover;
+      &:hover {
+        transition-duration: 1s;
+        transform: scale(1.05);
+      }
     }
+    .card-title {
+      font-family: "Josefin Sans", sans-serif;
+      color: #034494;
+      font-weight: bold;
+      padding: 2vh 0;
+    }
+    .card-text {
+      margin-bottom: 2vh;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-
-    /* SERVICIO */
-    .card {
-        margin: 1vh 3vh;
-        &-group {
-            margin: 3vh 0;
-        }
+  /* SERVICIO */
+  .card {
+    margin: 1vh 3vh;
+    &-group {
+      margin: 3vh 0;
     }
+  }
 }
