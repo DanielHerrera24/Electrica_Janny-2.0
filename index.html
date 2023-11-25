@@ -82,7 +82,7 @@
                 <a class="nav-link" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#seccion-servicios">Servicios</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#nosotros">Nosotros</a>
@@ -91,7 +91,7 @@
                 <a class="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#seccion-contacto">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -99,8 +99,8 @@
       </nav>
     </header>
 
-    <main class="index-main">
-      <section class="seccion-principal">
+    <main>
+      <section id="principal">
         <div class="texto-imagen-inicio">
           <h2 class="titulo">ELÉCTRICA JANNY</h2>
           <h3 class="titulo">INSTALACIÓN Y VENTA DE MATERIALES ELÉCTRICOS</h3>
@@ -114,7 +114,7 @@
         </a>
       </section>
       <section id="servicios">
-        <article id="seccion-servicios">
+        <article id="cont-servicios">
           <h2 id="title-servicios">SERVICIOS</h2>
           <span class="borde-amarillo"></span>
           <div class="card-group">
@@ -175,7 +175,22 @@
           </div>
         </article>
       </section>
-      <section id="nosotros"></section>
+      <section id="nosotros">
+        <article class="artIndex">
+          <div id="index-info-1" class="div-parrafos">
+              <h2 class="index-parrafos" data-aos="fade-right">NOSOTROS</h2>
+              <span data-aos="fade-right" class="borde-amarillo"></span>
+              <p data-aos="fade-right" class="index-parrafos-top parrafos"><b>Eléctrica
+                  Janny</b> se destaca en el sector de venta de <b>material eléctrico</b> y en la realización de <b>obras eléctricas</b> de alta calidad en San Luis Río Colorado, Sonora.
+              </p>
+              <p data-aos="fade-right" class="index-parrafos parrafos">Destacamos por nuestro firme compromiso con la excelencia en productos y servicios. Nuestro equipo altamente capacitado y nuestra experiencia consolidada nos permiten ofrecer soluciones eléctricas eficientes y personalizadas, desde proyectos residenciales hasta obras industriales. Somos profesionales que se adaptan a las exigencias de tus requerimientos para satisfacer completamente tus necesidades.</p>
+              <p data-aos="fade-right" class="index-parrafos parrafos">Acércate a nuestra sucursal, visita nuestro <b>sitio oficial</b> y síguenos en <a href="https://www.facebook.com/electrijanny" target="_blank"><b>Facebook</b></a>, no te pierdas de todos los beneficios y material eléctrico que tenemos para ti.</p>
+          </div>
+          <div id="index-div-img-1" class="div-imgs">
+              <img src="./imgs/Tienda-vistaDesdeCaja.jpg" alt="Instalacion de luz en techo" class="index-imgs">
+          </div>
+      </article>
+      </section>
       <section id="proyectos">
         <article id="art-proyectos">
           <h2>PROYECTOS</h2>
@@ -188,100 +203,102 @@
           </div>
         </article>
       </section>
-      <article id="seccion-contacto">
-        <div class="contacto-img">
-          <img src="./imgs/img-contacto.jpeg" alt="Trabajo en proceso" />
-        </div>
-        <form class="form">
-          <div class="form-all form-legend">
-            <legend>Formulario de contacto</legend>
-          </div>
-          <div class="form-all form-casillas">
-            <div>
-              <label for="nombre">Nombre(s)</label>
-              <input
-                type="text"
-                placeholder="Nombre(s)"
-                name="nombre"
-                required
-                id="input-nombre"
-                class="form-casillas"
-              />
+      <section id="contacto">
+        <article id="cont-contacto">
+          <div class="cont-imgyform">
+            <div class="contacto-img">
+              <img src="./imgs/img-contacto.jpeg" alt="Trabajo en proceso" />
             </div>
-            <div>
-              <label for="apellido">Apellido</label>
-              <input
-                type="text"
-                placeholder="Apellido"
-                name="apellido"
-                required
-                id="input-apellido"
-                class="form-casillas"
-              />
-            </div>
+            <form class="form">
+              <div class="form-all form-legend">
+                <legend>Formulario de contacto</legend>
+              </div>
+              <div class="form-all form-casillas">
+                <div>
+                  <label for="nombre">Nombre(s)</label>
+                  <input
+                    type="text"
+                    placeholder="Nombre(s)"
+                    name="nombre"
+                    required
+                    id="input-nombre"
+                    class="form-casillas"
+                  />
+                </div>
+                <div>
+                  <label for="apellido">Apellido</label>
+                  <input
+                    type="text"
+                    placeholder="Apellido"
+                    name="apellido"
+                    required
+                    id="input-apellido"
+                    class="form-casillas"
+                  />
+                </div>
+              </div>
+              <div class="form-all form-casillas">
+                <div>
+                  <label for="correo">Correo Electrónico</label>
+                  <input
+                    type="email"
+                    placeholder="ejemplo@gmail.com"
+                    name="correo"
+                    required
+                    id="input-email"
+                    class="form-casillas"
+                  />
+                </div>
+              </div>
+              <div class="form-all form-casillas">
+                <div>
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    placeholder="+00-000-000-0000"
+                    name="telefono"
+                    id="input-telefono"
+                    class="form-casillas"
+                  />
+                </div>
+              </div>
+              <div class="form-all form-textarea">
+                <div>
+                  <label for="comentario">Cuéntanos tu experiencia</label>
+                  <textarea
+                    class="form-casillas"
+                    placeholder="Escribe tu comentario"
+                    name="comentario"
+                    id="textarea-comentario"
+                    cols=""
+                    rows="6"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-all form-div-span">
+                <span class="form-span">
+                  <input class="button-reset" type="reset" value="Limpiar" />
+                </span>
+                <span class="form-span">
+                  <input class="button-enviar" type="submit" value="Enviar" />
+                </span>
+              </div>
+            </form>
           </div>
-          <div class="form-all form-casillas">
-            <div>
-              <label for="correo">Correo Electrónico</label>
-              <input
-                type="email"
-                placeholder="ejemplo@gmail.com"
-                name="correo"
-                required
-                id="input-email"
-                class="form-casillas"
-              />
-            </div>
+          <div class="google-maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.85370382818854!2d-114.7655052604591!3d32.450494726539944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d64f594fe410d5%3A0x80ad61ab778832ab!2sElectrica%20Janny!5e0!3m2!1ses-419!2smx!4v1675711822693!5m2!1ses-419!2smx"
+              width="1000"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Maps"
+            ></iframe>
           </div>
-          <div class="form-all form-casillas">
-            <div>
-              <label for="telefono">Teléfono</label>
-              <input
-                type="tel"
-                placeholder="+00-000-000-0000"
-                name="telefono"
-                id="input-telefono"
-                class="form-casillas"
-              />
-            </div>
-          </div>
-          <div class="form-all form-textarea">
-            <div>
-              <label for="comentario">Cuéntanos tu experiencia</label>
-              <textarea
-                class="form-casillas"
-                placeholder="Escribe tu comentario"
-                name="comentario"
-                id="textarea-comentario"
-                cols=""
-                rows="6"
-              ></textarea>
-            </div>
-          </div>
-          <div class="form-all form-div-span">
-            <span class="form-span">
-              <input class="button-reset" type="reset" value="Limpiar" />
-            </span>
-            <span class="form-span">
-              <input class="button-enviar" type="submit" value="Enviar" />
-            </span>
-          </div>
-        </form>
-      </article>
-      <article class="cont-maps">
-        <div class="google-maps">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.85370382818854!2d-114.7655052604591!3d32.450494726539944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d64f594fe410d5%3A0x80ad61ab778832ab!2sElectrica%20Janny!5e0!3m2!1ses-419!2smx!4v1675711822693!5m2!1ses-419!2smx"
-            width="1000"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Google Maps"
-          ></iframe>
-        </div>
-      </article>
+        </article>
+      </section>
     </main>
 
     <footer class="footer grid-footer">
