@@ -7,16 +7,10 @@
   padding: 10vh 0;
   min-height: 100vh;
   #title-servicios {
-    font-size: 6vh;
-    font-family: "Josefin Sans", sans-serif;
-    animation: fade-in linear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    @include subtitles;
   }
   span {
-    animation: fade-in linear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 50%;
+    @include fade-in;
   }
 }
 
