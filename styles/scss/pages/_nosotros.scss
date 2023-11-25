@@ -104,21 +104,12 @@
     }
 
     img {
-      transition: transform 0.3s;
-      box-shadow: 0 0 10px black;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: $box-shadow-imgs;
       animation: fade-in linear both;
       animation-timeline: view();
       animation-range: entry 20% cover 30%;
     }
-  }
-}
-
-/* Iframe */
-.google-maps {
-  box-shadow: $box-shadow-imgs;
-
-  iframe {
-    width: 100%;
   }
 }
 

@@ -1,31 +1,38 @@
 #proyectos {
-    #art-proyectos {
-        padding-top: 10vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h2 {
-            @include subtitles;
-        }
-        span {
-            @include fade-in;
-        }
-        .cont-proyectos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            gap: 3vh 2vh;
-            padding-top: 50px;
-            width: 100%;
-            img {
-                background-color: rgb(128, 234, 250);
-                object-fit: cover;
-                @include fade-in;
-                // arreglar tamaño
-                width: 50vh;
-                height: 50vh;
-                margin: 0 2vh;
-            }
-        }
+  padding-bottom: 5vh;
+  #art-proyectos {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      @include subtitles;
     }
+    span {
+      @include fade-in;
+    }
+    .cont-proyectos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 3vh 2vh;
+      padding-top: 50px;
+      width: 100%;
+      img {
+        background-color: rgb(128, 234, 250);
+        object-fit: cover;
+        @include fade-in;
+        // arreglar tamaño
+        width: 50vh;
+        height: 50vh;
+        margin: 0 2vh;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        &:hover {
+          box-shadow: $box-shadow-imgs;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
 }

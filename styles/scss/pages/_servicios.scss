@@ -30,7 +30,7 @@
       height: 30vh;
       object-fit: cover;
       &:hover {
-        transition-duration: 1s;
+        transition-duration: .3s;
         transform: scale(1.05);
       }
     }
