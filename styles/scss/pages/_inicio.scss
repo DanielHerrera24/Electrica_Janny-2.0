@@ -1,0 +1,46 @@
+/* Inicio */
+
+#principal {
+  background-image: url(../../imgs/puerta-local.png);
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    margin-top: 10px;
+    width: 120px;
+    color: #fff;
+    filter: drop-shadow(10px 10px 20px black);
+    font-family: "Josefin Sans", sans-serif;
+    animation: translate-arrow 1s, agrandar 1s cubic-bezier(0, 0.5, 1, 0.5),
+      bounce 1s infinite 1.2s alternate;
+    &:hover {
+      animation-play-state: paused;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}
+
+.texto-imagen-inicio {
+  text-align: center;
+  background: #0344947e;
+  backdrop-filter: blur(8px);
+  color: $color-white;
+  border-radius: 0 0 20px 20px;
+  line-height: 50px;
+  padding: 3vh 1vh 0 1vh;
+  font-family: "Josefin Sans", sans-serif;
+  animation: translate-text 1s, agrandar 1s cubic-bezier(0, 0.5, 1, 0.5);
+  z-index: 3;
+  h2 {
+    font-size: 6vh;
+  }
+  h3 {
+    font-size: 4vh;
+  }
+}
