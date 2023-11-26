@@ -240,84 +240,64 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div class="cont-imgyform">
-            <div class="contacto-img">
-              <img src="./imgs/img-contacto.jpeg" alt="Trabajo en proceso" />
+          <div class="cont-info-form">
+            <div class="contacto-info">
+              <div class="cont-contacto-info">
+                <h3>Nuestra sucursal</h3>
+                <p>Cjon. 5 de Mayo y 26 #2509, San Luis Río Colorado, Sonora</p>
+              </div>
+              <div class="cont-contacto-info">
+                <h3>¿Necesitas de nuestros servicios?</h3>
+                <p>Teléfono: 653 123 1234</p>
+                <p>
+                  O haznos saber lo que necesitas completando el siguiente
+                  <b>formulario:</b>
+                </p>
+              </div>
             </div>
-            <form class="form">
-              <div class="form-all form-legend">
-                <legend>Formulario de contacto</legend>
+            <form
+              id="form"
+              action="https://formsubmit.co/info.daniherrera@gmail.com"
+              method="POST"
+            >
+              <div class="cont-input">
+                <label for="nombre">Nombre <strong>*</strong></label>
+                <input type="text" name="nombre" class="campo" required />
               </div>
-              <div class="form-all form-casillas">
-                <div>
-                  <label for="nombre">Nombre(s)</label>
-                  <input
-                    type="text"
-                    placeholder="Nombre(s)"
-                    name="nombre"
-                    required
-                    id="input-nombre"
-                    class="form-casillas"
-                  />
-                </div>
-                <div>
-                  <label for="apellido">Apellido</label>
-                  <input
-                    type="text"
-                    placeholder="Apellido"
-                    name="apellido"
-                    required
-                    id="input-apellido"
-                    class="form-casillas"
-                  />
-                </div>
+              <div class="cont-input">
+                <label for="correo"
+                  >Correo Electrónico <strong>*</strong></label
+                >
+                <input type="email" name="correo" class="campo" required />
               </div>
-              <div class="form-all form-casillas">
-                <div>
-                  <label for="correo">Correo Electrónico</label>
-                  <input
-                    type="email"
-                    placeholder="ejemplo@gmail.com"
-                    name="correo"
-                    required
-                    id="input-email"
-                    class="form-casillas"
-                  />
-                </div>
+              <div class="cont-input">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" maxlength="10" class="campo" />
               </div>
-              <div class="form-all form-casillas">
-                <div>
-                  <label for="telefono">Teléfono</label>
-                  <input
-                    type="tel"
-                    placeholder="+00-000-000-0000"
-                    name="telefono"
-                    id="input-telefono"
-                    class="form-casillas"
-                  />
-                </div>
+              <div class="cont-input">
+                <label for="subject">Asunto</label>
+                <input type="text" name="_subject" class="campo" />
               </div>
-              <div class="form-all form-textarea">
-                <div>
-                  <label for="comentario">Cuéntanos tu experiencia</label>
-                  <textarea
-                    class="form-casillas"
-                    placeholder="Escribe tu comentario"
-                    name="comentario"
-                    id="textarea-comentario"
-                    cols=""
-                    rows="6"
-                  ></textarea>
-                </div>
+              <div class="cont-input">
+                <label for="comentario"
+                  >¿Cómo podemos ayudarte? <strong>*</strong></label
+                >
+                <textarea
+                  placeholder="Escribe tu comentario"
+                  name="comentario"
+                  class="campo"
+                  cols=""
+                  rows="6"
+                ></textarea>
               </div>
-              <div class="form-all form-div-span">
-                <span class="form-span">
-                  <input class="button-reset" type="reset" value="Limpiar" />
-                </span>
-                <span class="form-span">
-                  <input class="button-enviar" type="submit" value="Enviar" />
-                </span>
-              </div>
+              <input id="submit" class="button-enviar" type="submit" value="Enviar" />
+              <input
+                type="hidden"
+                name="_next"
+                value="http://localhost:5500"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table">
             </form>
           </div>
         </article>
@@ -347,7 +327,7 @@
         <h3>By Eléctrica Janny</h3>
       </div>
     </footer>
-    <script src="./js/pages/index.js"></script>
+    <script src="./index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
