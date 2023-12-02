@@ -72,11 +72,28 @@
         border-radius: 5px;
         background-color: #b6cfee;
         outline: none;
+        padding-left: 5px;
         &:focus {
           border-color: yellow;
         }
       }
       textarea {
+        padding: 5px;
+      }
+    }
+    .button-enviar {
+      background-color: #034494;
+      color: #fff;
+      font-size: larger;
+      padding: 7px;
+      width: 40%;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      &:hover {
+        background-color: #034494b4;
+      }
+      &:active {
+        background-color: #03449471;
       }
     }
   }

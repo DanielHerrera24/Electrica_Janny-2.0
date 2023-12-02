@@ -572,10 +572,30 @@ header {
   border-radius: 5px;
   background-color: #b6cfee;
   outline: none;
+  padding-left: 5px;
 }
 .cont-info-form #form .cont-input .campo:focus {
   border-color: yellow;
 }
+.cont-info-form #form .cont-input textarea {
+  padding: 5px;
+}
+.cont-info-form #form .button-enviar {
+  background-color: #034494;
+  color: #fff;
+  font-size: larger;
+  padding: 7px;
+  width: 40%;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+.cont-info-form #form .button-enviar:hover {
+  background-color: rgba(3, 68, 148, 0.7058823529);
+}
+.cont-info-form #form .button-enviar:active {
+  background-color: rgba(3, 68, 148, 0.4431372549);
+}
+
 @media screen and (max-width: 916px) {
   .cont-info-form .contacto-info {
     gap: 3vh;
